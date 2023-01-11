@@ -77,7 +77,7 @@ namespace Codewars
                 if (arr[i] == 0) continue;
                 c *=arr[i];
             }
-            return ((double)(c) / 10 > 1) ? TASK5_Recursion(c) : Task5_count;
+            return ((double)(c) / 10 >= 1) ? TASK5_Recursion(c) : Task5_count;
 
         }
         public string TASK6_Regex(string mainstring,string? filterstring = "")
@@ -98,8 +98,8 @@ namespace Codewars
     { 
         static void Main(string[] args)
         {
-           Task_on_codewars method = new Task_on_codewars();
-           Console.WriteLine(method.TASK6_Regex("aBC deF Ghi", null));
+            Task_on_codewars method = new Task_on_codewars();
+            Console.WriteLine(method.TASK5_Recursion(100));
         }
     }
 }
